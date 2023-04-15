@@ -48,19 +48,19 @@ export default ({ roundedHeaderButton }) => {
               At Consor Analytics, we turn data into insights to help businesses
               make smarter decisions and drive success.
             </Paragraph>
-            {/* <Actions>
+            <Actions>
               <input type="text" placeholder="Your E-mail Address" />
               <button>Get Started</button>
-            </Actions> */}
+            </Actions>
           </LeftColumn>
           <RightColumn>
-            {/* <IllustrationContainer>
+            <IllustrationContainer>
               <img
                 tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
                 src={DesignIllustration}
                 alt="Design Illustration"
               />
-            </IllustrationContainer> */}
+            </IllustrationContainer>
             <div className="commonninja_component pid-25d9e49b-3645-47e4-b483-0bf0129ba3ce"></div>
           </RightColumn>
         </TwoColumn>
