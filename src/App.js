@@ -68,7 +68,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 
 // import ContactUsForm from "components/forms/SimpleContactUs.js";
-// import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 // import SubscribeNewsLetterForm from "components/forms/SimpleSubscribeNewsletter.js";
 //
 // import GetStarted from "components/cta/GetStarted.js";
@@ -115,8 +115,9 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<SaaSProductLandingPage />} />
+          <Route path="/contact-us" element={<ContactUsForm />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </Router>
     </>

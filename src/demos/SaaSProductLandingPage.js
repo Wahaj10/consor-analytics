@@ -51,7 +51,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
       <div tw="w-auto">
-        <div tw="grid grid-cols-1 sm:grid-cols-3 place-content-evenly lg:mx-32">
+        <div tw="grid grid-cols-1 sm:grid-cols-3 place-content-evenly xl:mx-40 lg:mx-32 ">
           <div tw="w-auto items-center flex flex-col justify-center p-1">
             <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg">
               <img src={icon} alt="icon" tw="w-16 h-auto"></img>
