@@ -83,25 +83,25 @@ export default () => {
         </div>
       </div>
 
-      <Features
+      {/* <Features
         subheading={<Subheading>Features</Subheading>}
         heading={
           <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
+            We have Exceptional <HighlightedText>Services.</HighlightedText>
           </>
         }
-      />
-      <MainFeature
+      /> */}
+      {/* <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
-      />
+      /> */}
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading></Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            Why <HighlightedText>Consor</HighlightedText>
           </>
         }
         textOnLeft={false}
