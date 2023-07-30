@@ -72,7 +72,7 @@ export default ({
               {subheading && <Subheading>{subheading}</Subheading>}
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
-              <Form action={formAction} method={formMethod}>
+              <Form action={formAction} method={formMethod} netlify>
                 <Input
                   type="email"
                   name="email"
