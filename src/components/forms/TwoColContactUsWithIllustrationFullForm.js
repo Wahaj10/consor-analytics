@@ -34,7 +34,7 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-// const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`;
+const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`;
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`;
 const Textarea = styled(Input).attrs({ as: "textarea" })`
   ${tw`h-24`}
@@ -72,7 +72,7 @@ export default ({
               {subheading && <Subheading>{subheading}</Subheading>}
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
-              <form netlify name="contact">
+              <Form action={formAction} method={formMethod}>
                 <Input
                   type="email"
                   name="email"
@@ -82,7 +82,7 @@ export default ({
                 <Input type="text" name="subject" placeholder="Subject" />
                 <Textarea name="message" placeholder="Your Message Here" />
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-              </form>
+              </Form>
             </TextContent>
           </TextColumn>
         </TwoColumn>
