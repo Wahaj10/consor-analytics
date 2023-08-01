@@ -34,7 +34,7 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`;
+// const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`;
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`;
 const Textarea = styled(Input).attrs({ as: "textarea" })`
   ${tw`h-24`}
@@ -50,10 +50,10 @@ export default ({
       <wbr /> with us.
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Empowering Your Data Analytics Journey.",
   submitButtonText = "Send",
   formAction = "#",
-  formMethod = "get",
+  formMethod = "post",
   textOnLeft = true,
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -72,7 +72,12 @@ export default ({
               {subheading && <Subheading>{subheading}</Subheading>}
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
-              <Form action={formAction} method={formMethod}>
+              <form
+                action={formAction}
+                method={formMethod}
+                tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
+                data-netlify="true"
+              >
                 <Input
                   type="email"
                   name="email"
@@ -82,7 +87,7 @@ export default ({
                 <Input type="text" name="subject" placeholder="Subject" />
                 <Textarea name="message" placeholder="Your Message Here" />
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-              </Form>
+              </form>
             </TextContent>
           </TextColumn>
         </TwoColumn>
