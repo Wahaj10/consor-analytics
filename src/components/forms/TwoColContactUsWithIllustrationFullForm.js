@@ -53,8 +53,9 @@ export default ({
   description = "Empowering Your Data Analytics Journey.",
   submitButtonText = "Send",
   formAction = "#",
-  formMethod = "post",
+  formMethod = "POST",
   textOnLeft = true,
+  name = "contact",
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -73,10 +74,10 @@ export default ({
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
               <form
-                action={formAction}
                 method={formMethod}
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
                 data-netlify="true"
+                name={name}
               >
                 <Input
                   type="email"
