@@ -86,7 +86,8 @@ import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullF
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-// import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
+import About from "demos/About.js";
+import Services from "demos/Services.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
@@ -117,6 +118,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<SaaSProductLandingPage />} />
           <Route path="/contact-us" element={<ContactUsForm />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </Router>

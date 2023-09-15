@@ -79,8 +79,8 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/#">Home</NavLink>
-      <NavLink href="/#">Services</NavLink>
-      <NavLink href="/#">About</NavLink>
+      <NavLink href="/services">Services</NavLink>
+      <NavLink href="/about">About</NavLink>
       <NavLink href="/contact-us">Contact</NavLink>
     </NavLinks>,
   ];
