@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
+import ServiceAreaTwo from "./ServiceAreaTwo.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import Footer from "components/footers/FiveColumnWithBackground.js";
@@ -38,7 +39,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
-      <div tw="w-auto">
+      <div tw="w-auto py-10">
         <div tw="grid grid-cols-1 sm:grid-cols-3 place-content-evenly xl:mx-40 lg:mx-32 ">
           <div tw="w-auto items-center flex flex-col justify-center p-1 text-2xl">
             {/* <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg"> */}
@@ -70,6 +71,9 @@ export default () => {
           </div>
         </div>
       </div>
+
+      {/* <ServicesTabs /> */}
+      <ServiceAreaTwo />
 
       <FeatureWithSteps
         subheading={<Subheading></Subheading>}

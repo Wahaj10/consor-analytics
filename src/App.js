@@ -2,6 +2,16 @@ import React from "react";
 import GlobalStyles from "styles/GlobalStyles";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
+// import "./assets/css/style.css";
+// import "./assets/css/rtl.css";
+// import "./assets/css/animate.css";
+// import "./assets/css/bootstrap.css";
+// import "./assets/css/flaticon.css";
+// import "./assets/css/font-awesome-all.css";
+// import "./assets/css/imagebg.css";
+// import "./assets/css/jquery.fancybox.min.css";
+// import "./assets/css/switcher-style.css";
+
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
  * the prebuilt landing page components by uncommenting their import and export lines respectively.
