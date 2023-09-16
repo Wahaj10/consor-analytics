@@ -7,7 +7,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
 import ServiceAreaTwo from "./ServiceAreaTwo.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
+import BrandAreaOne from "./BrandAreaOne.js";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 import macHeroScreenshotImageSrc from "images/graphic1.png";
 
@@ -87,34 +87,7 @@ export default () => {
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
-
-      <Testimonial
-        subheading={<Subheading></Subheading>}
-        heading={
-          <>
-            Empower Your <HighlightedText>Business.</HighlightedText>
-          </>
-        }
-        testimonials={[
-          {
-            heading:
-              "Actionable Insights Unveiled through Comprehensive Data Analysis",
-            quote:
-              "Empowering Clients with Clear and Concise Data Reports for Informed, Data-Driven Decisions and Competitive Edge.",
-          },
-          {
-            heading:
-              "Crafting Custom Analytics Solutions to Fulfill Your Unique Needs",
-            quote:
-              "Unlock the full value of your data with our tailor-made analytics solutions, ensuring you gain maximum benefit from the wealth of information available. At Consor, we prioritize crafting personalized approaches that deliver optimal results for your unique business needs.",
-          },
-          {
-            heading: "Predictive Analytics",
-            quote:
-              "Empower yourself with our data analytics expertise to unveil hidden patterns and trends in your data. Gain the foresight needed to adapt proactively, seize opportunities, mitigate risks, and optimize resource allocation for unparalleled business success.",
-          },
-        ]}
-      />
+      <BrandAreaOne />
       <Footer />
     </AnimationRevealPage>
   );
