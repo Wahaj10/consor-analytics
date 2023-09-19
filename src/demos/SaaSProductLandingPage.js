@@ -10,6 +10,7 @@ import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import BrandAreaOne from "./BrandAreaOne.js";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 import macHeroScreenshotImageSrc from "images/graphic1.png";
+import blob1 from "images/svg-decorator-blob-1.svg";
 
 const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
   const target = document.querySelector(qSelector);
@@ -41,14 +42,17 @@ export default () => {
       <Hero roundedHeaderButton={true} />
       <div tw="w-auto py-10">
         <div tw="grid grid-cols-1 sm:grid-cols-3 place-content-evenly xl:mx-40 lg:mx-32 ">
-          <div tw="w-auto items-center flex flex-col justify-center p-1 text-2xl">
-            {/* <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg"> */}
-            {/* <img src={icon} alt="icon" tw="w-16 h-auto"></img> */}
+          <div
+            tw="w-auto items-center flex flex-col justify-center p-1 text-2xl"
+            style={{
+              backgroundImage: `url(${blob1})`,
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <span tw="font-bold text-primary-500">
               <span id="count1">0</span>PB+
             </span>
             <span>Data Written/s</span>
-            {/* </div> */}
           </div>
           <div tw="w-auto items-center flex flex-col justify-center p-1 text-2xl">
             {/* <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg"> */}

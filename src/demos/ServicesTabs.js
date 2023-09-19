@@ -13,61 +13,61 @@ export default () => {
 
   return (
     <>
-      <section class="service-style-two">
+      <section className="service-style-two">
         <div
-          class="pattern-layer wow slideInRight animated animated"
+          className="pattern-layer wow slideInRight animated animated"
           data-wow-delay="500ms"
           data-wow-duration="1500ms"
           style={{ backgroundImage: "url(assets/images/shape/pattern-10.png)" }}
         ></div>
-        <div class="auto-container">
-          <div class="sec-title text-center">
+        <div className="auto-container">
+          <div className="sec-title text-center">
             <p>Best Services</p>
             <h2>Explore Our Data Services</h2>
           </div>
-          <div class="tabs-box">
-            <div class="tab-btn-box">
-              <ul class="tab-btns tab-buttons clearfix">
-                <li class="tab-btn active-btn" data-tab="#tab-1">
-                  <div class="btn-inner">
-                    <div class="icon-box">
-                      <i class="flaticon-file"></i>
+          <div className="tabs-box">
+            <div className="tab-btn-box">
+              <ul className="tab-btns tab-buttons clearfix">
+                <li className="tab-btn active-btn" data-tab="#tab-1">
+                  <div className="btn-inner">
+                    <div className="icon-box">
+                      <i className="flaticon-file"></i>
                     </div>
                     <h4>Big Data Consulting</h4>
                   </div>
                 </li>
-                <li class="tab-btn" data-tab="#tab-2">
-                  <div class="btn-inner">
-                    <div class="icon-box">
-                      <i class="flaticon-robot"></i>
+                <li className="tab-btn" data-tab="#tab-2">
+                  <div className="btn-inner">
+                    <div className="icon-box">
+                      <i className="flaticon-robot"></i>
                     </div>
                     <h4>Artificial Intelligence</h4>
                   </div>
                 </li>
-                <li class="tab-btn" data-tab="#tab-3">
-                  <div class="btn-inner">
-                    <div class="icon-box">
-                      <i class="flaticon-data-analytics"></i>
+                <li className="tab-btn" data-tab="#tab-3">
+                  <div className="btn-inner">
+                    <div className="icon-box">
+                      <i className="flaticon-data-analytics"></i>
                     </div>
                     <h4>Data Analytics</h4>
                   </div>
                 </li>
-                <li class="tab-btn" data-tab="#tab-4">
-                  <div class="btn-inner">
-                    <div class="icon-box">
-                      <i class="flaticon-machine-learning"></i>
+                <li className="tab-btn" data-tab="#tab-4">
+                  <div className="btn-inner">
+                    <div className="icon-box">
+                      <i className="flaticon-machine-learning"></i>
                     </div>
                     <h4>Data Monetization</h4>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="inner-content">
-              <div class="tabs-content">
-                <div class="tab active-tab" id="tab-1">
-                  <div class="row align-items-center clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                      <div class="content-box">
+            <div className="inner-content">
+              <div className="tabs-content">
+                <div className="tab active-tab" id="tab-1">
+                  <div className="row align-items-center clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 content-column">
+                      <div className="content-box">
                         <h3>Acquire New Customers More Efficiently</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -76,7 +76,7 @@ export default () => {
                           exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat duis aute irure.
                         </p>
-                        <ul class="list-item">
+                        <ul className="list-item">
                           <li>Various Analysis Options</li>
                           <li>
                             Page Load Details (time, size, number of requests)
@@ -84,8 +84,8 @@ export default () => {
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                      <figure class="image-box js-tilt">
+                    <div className="col-lg-6 col-md-6 col-sm-12 image-column">
+                      <figure className="image-box js-tilt">
                         <img
                           src="assets/images/resource/illustration-1.png"
                           alt=""
@@ -94,10 +94,10 @@ export default () => {
                     </div>
                   </div>
                 </div>
-                <div class="tab" id="tab-2">
-                  <div class="row align-items-center clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                      <div class="content-box">
+                <div className="tab" id="tab-2">
+                  <div className="row align-items-center clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 content-column">
+                      <div className="content-box">
                         <h3>Acquire New Customers More Efficiently</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -106,7 +106,7 @@ export default () => {
                           exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat duis aute irure.
                         </p>
-                        <ul class="list-item">
+                        <ul className="list-item">
                           <li>Various Analysis Options</li>
                           <li>
                             Page Load Details (time, size, number of requests)
@@ -114,8 +114,8 @@ export default () => {
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                      <figure class="image-box js-tilt">
+                    <div className="col-lg-6 col-md-6 col-sm-12 image-column">
+                      <figure className="image-box js-tilt">
                         <img
                           src="assets/images/resource/illustration-1.png"
                           alt=""
@@ -124,10 +124,10 @@ export default () => {
                     </div>
                   </div>
                 </div>
-                <div class="tab" id="tab-3">
-                  <div class="row align-items-center clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                      <div class="content-box">
+                <div className="tab" id="tab-3">
+                  <div className="row align-items-center clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 content-column">
+                      <div className="content-box">
                         <h3>Acquire New Customers More Efficiently</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -136,7 +136,7 @@ export default () => {
                           exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat duis aute irure.
                         </p>
-                        <ul class="list-item">
+                        <ul className="list-item">
                           <li>Various Analysis Options</li>
                           <li>
                             Page Load Details (time, size, number of requests)
@@ -144,8 +144,8 @@ export default () => {
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                      <figure class="image-box js-tilt">
+                    <div className="col-lg-6 col-md-6 col-sm-12 image-column">
+                      <figure className="image-box js-tilt">
                         <img
                           src="assets/images/resource/illustration-1.png"
                           alt=""
@@ -154,10 +154,10 @@ export default () => {
                     </div>
                   </div>
                 </div>
-                <div class="tab" id="tab-4">
-                  <div class="row align-items-center clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                      <div class="content-box">
+                <div className="tab" id="tab-4">
+                  <div className="row align-items-center clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 content-column">
+                      <div className="content-box">
                         <h3>Acquire New Customers More Efficiently</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -166,7 +166,7 @@ export default () => {
                           exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat duis aute irure.
                         </p>
-                        <ul class="list-item">
+                        <ul className="list-item">
                           <li>Various Analysis Options</li>
                           <li>
                             Page Load Details (time, size, number of requests)
@@ -174,8 +174,8 @@ export default () => {
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                      <figure class="image-box js-tilt">
+                    <div className="col-lg-6 col-md-6 col-sm-12 image-column">
+                      <figure className="image-box js-tilt">
                         <img
                           src="assets/images/resource/illustration-1.png"
                           alt=""

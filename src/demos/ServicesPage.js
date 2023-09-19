@@ -3,7 +3,8 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 // import Hero from "components/hero/TwoColumnWithVideo.js";
-import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
+import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
+import ServiceAreaGroup from "demos/ServiceAreaGroup.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
@@ -33,6 +34,7 @@ export default () => {
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
+      <ServiceAreaGroup />
       <MainFeature
         subheading={<Subheading>Established Since 2021</Subheading>}
         heading={
@@ -89,14 +91,14 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
         textOnLeft={true}
       />
-      <Testimonial
+      {/* <Testimonial
         subheading=""
         heading={
           <>
             Customers <HighlightedText>Love Us.</HighlightedText>
           </>
         }
-      />
+      /> */}
       {/* <DownloadApp
         text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
       /> */}
