@@ -7,7 +7,6 @@ import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
 import ServiceAreaGroup from "demos/ServiceAreaGroup.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 
