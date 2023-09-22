@@ -7,14 +7,16 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import EmailIllustrationSrc from "images/email-illustration.svg";
+// import EmailIllustrationSrc from "images/email-illustration.svg";
+import contactImg from "images/ContactUs.png";
+
 import Header from "../headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
+const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = styled(Column)((props) => [
   tw`md:w-7/12 mt-16 md:mt-0`,
   props.textOnLeft
@@ -66,12 +68,17 @@ export default ({
       <Container>
         <TwoColumn>
           <ImageColumn>
-            <Image imageSrc={EmailIllustrationSrc} />
+            <Image imageSrc={contactImg} />
           </ImageColumn>
           <TextColumn textOnLeft={textOnLeft}>
             <TextContent>
-              {subheading && <Subheading>{subheading}</Subheading>}
-              <Heading>{heading}</Heading>
+              {subheading && (
+                <div class="section-title">
+                  <div className="sub-title">{subheading}</div>
+                  <h6 className="title">{heading}</h6>
+                </div>
+              )}
+
               {description && <Description>{description}</Description>}
               <form
                 method={formMethod}

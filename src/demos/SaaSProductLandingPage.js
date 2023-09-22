@@ -8,7 +8,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 import ServiceAreaTwo from "./ServiceAreaTwo.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import BrandAreaOne from "./BrandAreaOne.js";
-import Footer from "components/footers/FiveColumnWithBackground.js";
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 import macHeroScreenshotImageSrc from "images/graphic1.png";
 import blob1 from "images/svg-decorator-blob-1.svg";
 
@@ -44,17 +44,31 @@ export default () => {
         <div tw="grid grid-cols-1 sm:grid-cols-3 place-content-evenly xl:mx-40 lg:mx-32 ">
           <div
             tw="w-auto items-center flex flex-col justify-center p-1 text-2xl"
-            style={{
-              backgroundImage: `url(${blob1})`,
-              backgroundRepeat: "no-repeat",
-            }}
+            // style={{
+            //   height: "277px",
+            //   backgroundImage: `url(${blob1})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "117%",
+            //   backgroundPositionX: "center",
+            //   backgroundPositionY: "center",
+            // }}
           >
             <span tw="font-bold text-primary-500">
               <span id="count1">0</span>PB+
             </span>
             <span>Data Written/s</span>
           </div>
-          <div tw="w-auto items-center flex flex-col justify-center p-1 text-2xl">
+          <div
+            tw="w-auto items-center flex flex-col justify-center p-1 text-2xl"
+            // style={{
+            //   height: "277px",
+            //   backgroundImage: `url(${blob1})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "117%",
+            //   backgroundPositionX: "center",
+            //   backgroundPositionY: "center",
+            // }}
+          >
             {/* <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg"> */}
             {/* <img src={icon} alt="icon" tw="w-16 h-auto"></img> */}
             <span tw="font-bold text-primary-500">
@@ -63,7 +77,17 @@ export default () => {
             <span>Companies helped</span>
             {/* </div> */}
           </div>
-          <div tw="w-auto items-center flex flex-col justify-center p-1 text-2xl">
+          <div
+            tw="w-auto items-center flex flex-col justify-center p-1 text-2xl"
+            // style={{
+            //   height: "277px",
+            //   backgroundImage: `url(${blob1})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "117%",
+            //   backgroundPositionX: "center",
+            //   backgroundPositionY: "center",
+            // }}
+          >
             {/* <div tw="w-40 h-40 flex flex-col justify-center items-center bg-violet-200 rounded-lg"> */}
             {/* <img src={icon} alt="icon" tw="w-16 h-auto"></img> */}
             <span tw="font-bold text-primary-500">

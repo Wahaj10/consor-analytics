@@ -45,7 +45,7 @@ const PrimaryButton = styled(PrimaryButtonBase)((props) => [
 ]);
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = "",
   heading = (
     <>
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
@@ -81,7 +81,7 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Subheading>{subheading}</Subheading>
+            {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             {primaryButtonUrl && (
