@@ -1,9 +1,9 @@
 import React from "react";
 
-import img1 from "assets/img/about/2.png";
+// import img1 from "assets/img/about/2.png";
 import img2 from "assets/img/about/3.png";
-import img3 from "assets/img/banner/5.svg";
-import img4 from "assets/img/about/1.png";
+// import img3 from "assets/img/banner/5.svg";
+// import img4 from "assets/img/about/1.png";
 import img5 from "assets/img/icon/2.png";
 import img6 from "assets/img/icon/3.png";
 

@@ -10,7 +10,7 @@ import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import BrandAreaOne from "./BrandAreaOne.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import macHeroScreenshotImageSrc from "images/graphic1.png";
-import blob1 from "images/svg-decorator-blob-1.svg";
+// import blob1 from "images/svg-decorator-blob-1.svg";
 
 const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
   const target = document.querySelector(qSelector);
