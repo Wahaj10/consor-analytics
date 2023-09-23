@@ -78,7 +78,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 
 // import ContactUsForm from "components/forms/SimpleContactUs.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
+import ContactUsForm from "components/forms/ContactPage.js";
 // import SubscribeNewsLetterForm from "components/forms/SimpleSubscribeNewsletter.js";
 //
 // import GetStarted from "components/cta/GetStarted.js";

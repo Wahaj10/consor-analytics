@@ -6,17 +6,17 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import AboutAreaOne from "demos/AboutAreaOne.js";
 import FaqAreaOne from "demos/FaqAreaOne.js";
-import MainFeature from "components/features/TwoColWithButton.js";
-import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
+// import MainFeature from "components/features/TwoColWithButton.js";
+// import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 
 export default () => {
-  const Subheading = tw.span`tracking-wider text-sm font-medium`;
-  const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-  const Description = tw.span`inline-block mt-8`;
+  // const Subheading = tw.span`tracking-wider text-sm font-medium`;
+  // const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  // const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   return (
     <AnimationRevealPage>
