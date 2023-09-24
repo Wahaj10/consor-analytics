@@ -1,8 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-import img1 from "assets/img/client/7.svg";
-import img2 from "assets/img/client/8.svg";
+import img1 from "assets/img/client/gcp.svg";
+import img2 from "assets/img/client/azu.svg";
 import img3 from "assets/img/client/9.svg";
 import img4 from "assets/img/client/11.svg";
 import img5 from "assets/img/client/8.svg";
