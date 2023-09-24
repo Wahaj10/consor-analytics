@@ -17,7 +17,7 @@ const ServiceAreaGroup = () => {
   return (
     <>
       {/*=================== service area start ===================*/}
-      <div className="service-area bg-relative pd-top-100">
+      <div className="service-area bg-relative pd-top-100 ">
         <img
           className="position-bottom-left top_image_bounce"
           src={img}

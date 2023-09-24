@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "assets/img/service/4.png";
+import img1 from "assets/img/service/da6.png";
 import img2 from "assets/img/service/8.png";
-import img3 from "assets/img/service/5.png";
+import img3 from "assets/img/service/da.png";
 import img4 from "assets/img/service/9.png";
-import img5 from "assets/img/service/ml4.png";
+import img5 from "assets/img/service/ml.png";
 import img6 from "assets/img/service/10.png";
 
 const ServiceAreaTwo = () => {
