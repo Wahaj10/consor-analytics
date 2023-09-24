@@ -13,26 +13,19 @@ const CounterAreaFour = () => {
       <div className="counter-area mg-top--100">
         <div className="container pd-bottom-90">
           <div
-            className="bg-base counter-4-area pt-5 border-radius-20"
+            className="counter-4-area pt-5 border-radius-20"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1500"
           >
             <div className="row">
-              <div className="col-lg-3 align-self-center col-md-6 ">
-                <div className="single-counter-inner">
-                  <h5 className="counter-4-title">
-                    Data <br /> Driven !
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 ">
+              <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
                   <div className="thumb media-left pe-2">
                     <img src={img1} alt="img" />
                   </div>
                   <div className="media-body align-self-center">
-                    <h4 className="text-white mb-1">
+                    <h4 className="text-black mb-1">
                       <TrackVisibility once>
                         {({ isVisible }) =>
                           isVisible && (
@@ -43,17 +36,17 @@ const CounterAreaFour = () => {
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-white mb-0">Team member</p>
+                    <p className="text-black mb-0">Team member</p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 ">
+              <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
                   <div className="thumb media-left pe-2">
                     <img src={img2} alt="img" />
                   </div>
                   <div className="media-body align-self-center">
-                    <h4 className="text-white mb-1">
+                    <h4 className="text-black mb-1">
                       <TrackVisibility once>
                         {({ isVisible }) =>
                           isVisible && (
@@ -64,17 +57,17 @@ const CounterAreaFour = () => {
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-white mb-0">Team member</p>
+                    <p className="text-black mb-0">Team member</p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 ">
+              <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
                   <div className="thumb media-left pe-2">
                     <img src={img3} alt="img" />
                   </div>
                   <div className="media-body align-self-center">
-                    <h4 className="text-white mb-1">
+                    <h4 className="text-black mb-1">
                       <TrackVisibility once>
                         {({ isVisible }) =>
                           isVisible && (
@@ -85,7 +78,7 @@ const CounterAreaFour = () => {
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-white mb-0">Team member</p>
+                    <p className="text-black mb-0">Team member</p>
                   </div>
                 </div>
               </div>

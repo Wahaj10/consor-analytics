@@ -2,11 +2,11 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 
 import img1 from "assets/img/client/gcp.svg";
-import img2 from "assets/img/client/azu.svg";
-import img3 from "assets/img/client/9.svg";
-import img4 from "assets/img/client/11.svg";
-import img5 from "assets/img/client/8.svg";
-import img6 from "assets/img/client/9.svg";
+import img2 from "assets/img/client/azure.svg";
+import img3 from "assets/img/client/aws.svg";
+import img4 from "assets/img/client/snow.svg";
+import img5 from "assets/img/client/tableau.svg";
+import img6 from "assets/img/client/aws.svg";
 
 const BrandAreaOne = () => {
   return (
