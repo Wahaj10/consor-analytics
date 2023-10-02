@@ -24,8 +24,11 @@ const CounterAreaFour = () => {
                   <div className="thumb media-left pe-2">
                     <img src={img1} alt="img" />
                   </div>
-                  <div className="media-body align-self-center">
-                    <h4 className="text-black mb-1">
+                  <div
+                    style={{ fontSize: "22px" }}
+                    className="media-body align-self-center"
+                  >
+                    <h4 className="text-black mb-1 title">
                       <TrackVisibility once>
                         {({ isVisible }) =>
                           isVisible && (
@@ -45,7 +48,10 @@ const CounterAreaFour = () => {
                   <div className="thumb media-left pe-2">
                     <img src={img2} alt="img" />
                   </div>
-                  <div className="media-body align-self-center">
+                  <div
+                    style={{ fontSize: "22px" }}
+                    className="media-body align-self-center"
+                  >
                     <h4 className="text-black mb-1">
                       <TrackVisibility once>
                         {({ isVisible }) =>
@@ -66,7 +72,10 @@ const CounterAreaFour = () => {
                   <div className="thumb media-left pe-2">
                     <img src={img3} alt="img" />
                   </div>
-                  <div className="media-body align-self-center">
+                  <div
+                    style={{ fontSize: "22px" }}
+                    className="media-body align-self-center"
+                  >
                     <h4 className="text-black mb-1">
                       <TrackVisibility once>
                         {({ isVisible }) =>

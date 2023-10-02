@@ -804,6 +804,47 @@
 /*--------------------------------------------------------------
 # Globals
 --------------------------------------------------------------*/
+
+.counter {
+  color: var(--main-color);
+}
+
+.typing-container {
+  justify-content: initial;
+  align-items: center;
+  font-size: 39px;
+}
+
+.sentence {
+  color: var(--main-color);
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: var(--main-color);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+// Then, inside .input-cursor:
+.input-cursor {
+  animation: blink 0.6s linear infinite alternate;
+}
 .border-radius-6 {
   border-radius: 6px;
   img {

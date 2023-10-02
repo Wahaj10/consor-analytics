@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -24,17 +25,67 @@ const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none opacity-5 absolute left-0 bottom-0 h-64 w-64 transform -translate-x-2/3 -z-10`}
 `;
 
+async function deleteSentence(eleRef) {
+  const sentence = document.querySelector(eleRef).getInnerHTML();
+  const letters = sentence.split("");
+  while (letters.length > 0) {
+    await waitForMs(100);
+    letters.pop();
+    document.querySelector(eleRef).setHTML(letters.join(""));
+  }
+}
+
+async function typeSentence(sentence, eleRef, delay = 100) {
+  const letters = sentence.split("");
+  let i = 0;
+  while (i < letters.length) {
+    await waitForMs(delay);
+    document.querySelector(eleRef).append(letters[i]);
+    i++;
+  }
+  return;
+}
+
+async function waitForMs(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function carouselTextType() {
+  const carouselText = ["Fluently.", "Constantly.", "So you don't have to."];
+  let i = 0;
+  while (true) {
+    await typeSentence(carouselText[i], "#sentence");
+    await waitForMs(1500);
+    await deleteSentence("#sentence");
+    await waitForMs(500);
+    i += 1;
+    if (i === 3) {
+      i = 0;
+    }
+  }
+}
+
 export default ({ roundedHeaderButton }) => {
+  useEffect(() => {
+    carouselTextType();
+  }, []);
+
   return (
     <>
       <Header roundedHeaderButton={roundedHeaderButton} />
       <Container>
         <TwoColumn>
           <LeftColumn>
-            <Heading>
+            {/* <Heading>
               <span tw="text-primary-500">Data</span> is a language we speak{" "}
               <span tw="text-primary-500">fluently.</span>
-            </Heading>
+            </Heading> */}
+            <div class="typing-container">
+              Data is a Language we speak{" "}
+              <span id="sentence" className="sentence"></span>
+              <span className="input-cursor"></span>
+            </div>
+
             <Paragraph>
               At Consor Analytics, we turn data into insights to help businesses
               make smarter decisions and drive success.
