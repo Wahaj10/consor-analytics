@@ -25,12 +25,12 @@ const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
 `;
 
 async function deleteSentence(eleRef) {
-  const sentence = document.querySelector(eleRef).getInnerHTML();
+  const sentence = document.querySelector(eleRef).innerHTML;
   const letters = sentence.split("");
   while (letters.length > 0) {
     await waitForMs(100);
     letters.pop();
-    document.querySelector(eleRef).setHTML(letters.join(""));
+    document.querySelector(eleRef).innerHTML = letters.join("");
   }
 }
 
@@ -52,7 +52,7 @@ async function waitForMs(ms) {
 async function carouselTextType() {
   const carouselText = ["Fluently.", "Constantly.", "So you don't have to."];
   let i = 0;
-  while (true) {
+  while (i < 4) {
     await typeSentence(carouselText[i], "#sentence");
     await waitForMs(1500);
     await deleteSentence("#sentence");
@@ -66,7 +66,20 @@ async function carouselTextType() {
 
 export default ({ roundedHeaderButton }) => {
   useEffect(() => {
-    carouselTextType();
+    const onPageLoad = () => {
+      setTimeout(() => {
+        carouselTextType();
+      }, 500);
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener("load", onPageLoad);
+    }
   }, []);
 
   return (
