@@ -42,9 +42,9 @@ const ServiceAreaGroup = () => {
                       <Link to="/service-details">{data.title}</Link>
                     </h5>
                     <p>{data.des}</p>
-                    <Link className="btn btn-border-base" to="/service-details">
+                    {/* <Link className="btn btn-border-base" to="/service-details">
                       Touch More <FaPlus />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
