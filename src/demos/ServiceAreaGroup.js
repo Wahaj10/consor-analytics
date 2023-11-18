@@ -17,11 +17,11 @@ const ServiceAreaGroup = () => {
     <>
       {/*=================== service area start ===================*/}
       <div className="service-area bg-relative pd-top-100 ">
-        <img
+        {/* <img
           className="position-bottom-left top_image_bounce"
           src={img}
           alt="bulb icon"
-        />
+        /> */}
         <div className="container">
           <div className="section-title text-center">
             <h6 className="sub-title">CREATIVE SERVICES</h6>
@@ -38,7 +38,12 @@ const ServiceAreaGroup = () => {
                   </div>
                   <div className="details">
                     <h5>
-                      <Link to="/service-details">{data.title}</Link>
+                      <Link to="#services">
+                        <span className="service-number">
+                          {index + 1 + ". "}
+                        </span>
+                        {data.title}
+                      </Link>
                     </h5>
                     <p>{data.des}</p>
                     {/* <Link className="btn btn-border-base" to="/service-details">
