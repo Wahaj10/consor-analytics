@@ -805,8 +805,20 @@
 # Globals
 --------------------------------------------------------------*/
 
+.banner {
+  background-color: #f7f4fe;
+  margin: 0 -32px;
+  padding: 33px 0;
+}
+
 .counter {
-  color: var(--main-color);
+  color: black;
+  font-weight: "bold";
+}
+
+.banner-img {
+  width: 111px;
+  height: 111px;
 }
 
 .typing-container {
@@ -875,6 +887,7 @@
 .mg-negative {
   margin: 0 -32px;
 }
+
 .bg-sky {
   background: #f9f9f9;
 }

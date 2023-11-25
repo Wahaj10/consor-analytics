@@ -9,7 +9,7 @@ const FaqAreaOne = () => {
     <>
       {/*==================== Faq area start ====================*/}
       <div
-        className="faq-area faq-area-margin-top bg-cover pd-top-90 pd-bottom-110 mg-negative"
+        className="faq-area bg-cover pd-top-90 pd-bottom-110 mg-negative"
         style={{ backgroundImage: `url(${img3})` }}
       >
         <div className="container">

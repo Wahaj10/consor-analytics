@@ -2,16 +2,16 @@ import React from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 
-import img1 from "assets/img/icon/33.svg";
-import img2 from "assets/img/icon/34.svg";
-import img3 from "assets/img/icon/35.svg";
+import img1 from "assets/img/icon/img1-1.png";
+import img2 from "assets/img/icon/img2.png";
+import img3 from "assets/img/icon/img3.png";
 
 const CounterAreaFour = () => {
   return (
     <>
       {/*================= counter area start {/*=================*/}
-      <div className="counter-area mg-top--100">
-        <div className="container pd-bottom-90">
+      <div className="counter-area mg-top--100 banner">
+        <div className="container">
           <div
             className="counter-4-area pt-5 border-radius-20"
             data-aos="fade-up"
@@ -21,7 +21,7 @@ const CounterAreaFour = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
-                  <div className="thumb media-left pe-2">
+                  <div className="media-left pe-2 banner-img">
                     <img src={img1} alt="img" />
                   </div>
                   <div
@@ -33,19 +33,20 @@ const CounterAreaFour = () => {
                         {({ isVisible }) =>
                           isVisible && (
                             <span className="counter">
-                              <CountUp delay={0} start={0} end={10} /> k+
+                              <CountUp delay={0} start={0} end={329} /> Million
+                              TB+
                             </span>
                           )
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-black mb-0">Team member</p>
+                    <p className="text-black mb-0">Data Created Daily</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
-                  <div className="thumb media-left pe-2">
+                  <div className="media-left pe-2 banner-img">
                     <img src={img2} alt="img" />
                   </div>
                   <div
@@ -57,19 +58,20 @@ const CounterAreaFour = () => {
                         {({ isVisible }) =>
                           isVisible && (
                             <span className="counter">
-                              <CountUp delay={0} start={0} end={200} /> +
+                              <CountUp delay={0} start={0} end={100} />{" "}
+                              Yotabytes+
                             </span>
                           )
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-black mb-0">Team member</p>
+                    <p className="text-black mb-0">Cloud Stored Data</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 ">
                 <div className="single-counter-inner media">
-                  <div className="thumb media-left pe-2">
+                  <div className="media-left pe-2 banner-img">
                     <img src={img3} alt="img" />
                   </div>
                   <div
@@ -81,13 +83,13 @@ const CounterAreaFour = () => {
                         {({ isVisible }) =>
                           isVisible && (
                             <span className="counter">
-                              <CountUp delay={0} start={0} end={250} /> +
+                              <CountUp delay={0} start={0} end={25000000} /> +
                             </span>
                           )
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className="text-black mb-0">Team member</p>
+                    <p className="text-black mb-0">Daily Data Migrations</p>
                   </div>
                 </div>
               </div>

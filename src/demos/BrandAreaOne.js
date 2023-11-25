@@ -27,6 +27,9 @@ const BrandAreaOne = () => {
               <img src={img4} alt="img" />
             </div>
             <div className="thumb">
+              <img src={img1} alt="img" />
+            </div>
+            <div className="thumb">
               <img src={img5} alt="img" />
             </div>
             <div className="thumb">
