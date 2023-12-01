@@ -1,17 +1,12 @@
 import React from "react";
 
-// import img1 from "assets/img/about/2.png";
 import img2 from "assets/img/about/3.png";
-// import img3 from "assets/img/banner/5.svg";
-// import img4 from "assets/img/about/1.png";
-// import img5 from "assets/img/icon/2.png";
-// import img6 from "assets/img/icon/3.png";
 
 const AboutAreaOne = () => {
   return (
     <>
       {/* ================== AboutAreaOne start  ==================*/}
-      <div className="about-area pd-top-120">
+      <div className="about-area pd-top-90">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -52,7 +47,7 @@ const AboutAreaOne = () => {
               data-aos-duration="1500"
             >
               <div className="section-title mt-5 mt-lg-0">
-                <h6 className="sub-title">ABOUT US</h6>
+                {/* <h6 className="sub-title">ABOUT US</h6> */}
                 <h2 className="title">
                   Our <span>Story</span>
                 </h2>

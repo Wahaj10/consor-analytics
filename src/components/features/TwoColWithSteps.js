@@ -64,22 +64,19 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Expertise and experience",
+      heading: "Innovative Solutions",
       description:
-        "Our data analysis company has a team of highly skilled and experienced" +
-        "professionals who have a deep understanding of data analysis and visualization..",
+        "Stay ahead of the curve with Consor's commitment to embracing and implementing the latest technologies, providing your business with cutting-edge solutions.",
     },
     {
-      heading: "Customized solutions",
+      heading: "Tailored Expertise",
       description:
-        "We believe in providing customized solutions that meet" +
-        "the unique needs and requirements of each client.",
+        "Benefit from a team of seasoned professionals dedicated to understanding the nuances of your industry, ensuring expert guidance tailored to your unique challenges.",
     },
     {
-      heading: "Commitment to quality",
+      heading: "Data Security Priority",
       description:
-        "We are committed to providing high-quality" +
-        "services that exceed our clients' expectations.",
+        "Trust in Consor's unwavering commitment to maintaining the highest standards of data protection, ensuring the confidentiality, integrity, and availability of your critical information.",
     },
   ];
 

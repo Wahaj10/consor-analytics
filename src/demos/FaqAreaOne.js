@@ -41,14 +41,9 @@ const FaqAreaOne = () => {
             >
               <div className="section-title mb-0 mt-4 mt-lg-0">
                 <h6 className="sub-title">SOME FAQ'S</h6>
-                <h2 className="title">
+                {/* <h2 className="title">
                   Creating <span>Digital</span> Masterpieces
-                </h2>
-                {/* <p className="content">
-                  It is a long established fact that a reader will be distr
-                  acted bioiiy the end gail designa readable content of a page
-                  when looking.
-                </p> */}
+                </h2> */}
               </div>
               <div
                 className="accordion accordion-inner style-2 accordion-icon-left mt-3"

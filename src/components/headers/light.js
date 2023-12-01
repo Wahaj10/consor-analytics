@@ -80,8 +80,8 @@ export default ({
     <NavLinks key={1}>
       <NavLink href="/#">Home</NavLink>
       <NavLink href="/services">Services</NavLink>
-      <NavLink href="/about">About</NavLink>
-      <NavLink href="/contact-us">Contact</NavLink>
+      <NavLink href="/about">About Us</NavLink>
+      <NavLink href="/contact-us">Contact Us</NavLink>
     </NavLinks>,
   ];
 
