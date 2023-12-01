@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import img1 from "assets/img/service/da6.png";
 import img2 from "assets/img/service/8.png";
 import img3 from "assets/img/service/da.png";
@@ -11,12 +10,12 @@ const ServiceAreaTwo = () => {
   return (
     <>
       {/*=================== service area start ===================*/}
-      <div className="service-area mg-negative bg-gray bg-relative pd-top-120 pd-bottom-90">
+      <div className="service-area mg-negative bg-gray bg-relative pd-top-60 pd-bottom-90">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-title text-center">
-                <h6 className="sub-title">Why Consor</h6>
+                {/* <h6 className="sub-title">Why Consor</h6> */}
                 <h2 className="title">
                   Optimize Your <span tw="text-primary-500">Performance</span>{" "}
                   With Data Analytics
@@ -32,14 +31,17 @@ const ServiceAreaTwo = () => {
                 </div>
                 <div className="details">
                   <div className="icon mb-3">
-                    <img src={img2} alt="img" />
+                    <img className="m-auto" src={img2} alt="img" />
                   </div>
-                  <h5>
+                  {/* <h5>
                     <Link to="/service-details">
                       Provide actionable insights
                     </Link>
+                  </h5> */}
+                  <h5>
+                    Companies leveraging data analytics for decision-making
+                    experience a 25% increase in overall decision accuracy.
                   </h5>
-                  <p>Insights derived from comprehensive data analysis</p>
                 </div>
               </div>
             </div>
@@ -50,14 +52,17 @@ const ServiceAreaTwo = () => {
                 </div>
                 <div className="details">
                   <div className="icon mb-3">
-                    <img src={img4} alt="img" />
+                    <img className="m-auto" src={img4} alt="img" />
                   </div>
-                  <h5>
+                  {/* <h5>
                     <Link to="/service-details">
                       Bespoke analytics solutions
                     </Link>
+                  </h5> */}
+                  <h5>
+                    Businesses employing data-driven decision-making strategies
+                    achieve, on average, a 15% increase in annual revenue.
                   </h5>
-                  <p>Solutions tailored to your needs</p>
                 </div>
               </div>
             </div>
@@ -68,12 +73,15 @@ const ServiceAreaTwo = () => {
                 </div>
                 <div className="details">
                   <div className="icon mb-3">
-                    <img src={img6} alt="img" />
+                    <img className="m-auto" src={img6} alt="img" />
                   </div>
-                  <h5>
+                  {/* <h5>
                     <Link to="/service-details">Predictive Analytics</Link>
+                  </h5> */}
+                  <h5>
+                    Organizations actively leveraging data analytics are 2.5
+                    times more likely to be leaders in their industry.
                   </h5>
-                  <p>Uncover hidden patterns and trends in their data</p>
                 </div>
               </div>
             </div>

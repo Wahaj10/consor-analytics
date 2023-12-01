@@ -14,13 +14,11 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
 
 import "slick-carousel/slick/slick.css";
 
-const PrimaryBackgroundContainer = tw(
-  Container
-)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8  text-gray-100`;
 
 const HeadingContainer = tw.div``;
 const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
-const Heading = tw(SectionHeading)`text-white`;
+const Heading = tw(SectionHeading)`text-black`;
 const Description = tw(SectionDescription)`mx-auto text-center text-gray-300`;
 
 const TestimonialsSlider = styled(Slider)`
