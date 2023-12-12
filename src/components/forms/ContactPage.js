@@ -80,9 +80,8 @@ export default ({
 
               {description && <Description>{description}</Description>}
               <form
-                method={formMethod}
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
-                data-netlify="true"
+                netlify
                 name={name}
               >
                 <Input
