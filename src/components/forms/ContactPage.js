@@ -81,7 +81,6 @@ export default ({
               {description && <Description>{description}</Description>}
               <form
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
-                data-netlify="true"
                 name={name}
                 method="POST"
               >
