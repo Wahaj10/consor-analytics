@@ -79,7 +79,7 @@ export default ({
               )}
 
               {description && <Description>{description}</Description>}
-              <form
+              {/* <form
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
                 name={name}
                 method="POST"
@@ -93,6 +93,22 @@ export default ({
                 <Input type="text" name="subject" placeholder="Subject" />
                 <Textarea name="message" placeholder="Your Message Here" />
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+              </form> */}
+
+              <form method="POST" name="contactForm" className="contactForm">
+                <input type="hidden" name="form-name" value="contactForm" />
+
+                <input type="text" name="name" placeholder="Enter your name" />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+
+                <textarea name="message" placeholder="Messaage"></textarea>
+
+                <button type="submit">Submit</button>
               </form>
             </TextContent>
           </TextColumn>
