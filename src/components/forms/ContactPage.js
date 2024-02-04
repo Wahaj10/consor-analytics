@@ -83,8 +83,6 @@ export default ({
     e.preventDefault();
   };
 
-  const handleChange = (e) => ({ [e.target.name]: e.target.value });
-
   return (
     <AnimationRevealPage>
       <Header roundedHeaderButton={true} />
