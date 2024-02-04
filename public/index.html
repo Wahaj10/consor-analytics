@@ -54,11 +54,12 @@
     />
   </head>
   <body>
-    <form name="contactForm" netlify hidden>
+    <form name="contact" netlify hidden netlify-honeypot="bot-field">
       <input type="text" name="name" id="formname" />
 
       <input type="email" name="email" />
-
+      <input type="text" name="name" />
+      <input type="text" name="subject" />
       <textarea name="message"></textarea>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>

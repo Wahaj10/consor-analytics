@@ -56,7 +56,6 @@ export default ({
   formAction = "#",
   formMethod = "POST",
   textOnLeft = true,
-  name = "contactForm",
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -81,9 +80,11 @@ export default ({
               {description && <Description>{description}</Description>}
               <form
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
-                name={name}
+                name="contact"
                 method="POST"
               >
+                <input type="hidden" name="form-name" value="contact" />
+
                 <Input
                   type="email"
                   name="email"
