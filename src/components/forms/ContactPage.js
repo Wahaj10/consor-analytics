@@ -53,11 +53,29 @@ export default ({
   ),
   description = "Empowering Your Data Analytics Journey.",
   submitButtonText = "Send",
-  formAction = "#",
   formMethod = "POST",
   textOnLeft = true,
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
 
   return (
     <AnimationRevealPage>
@@ -79,6 +97,7 @@ export default ({
 
               {description && <Description>{description}</Description>}
               <form
+                onSubmit={handleSubmit}
                 tw="mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0"
                 name="contact"
                 method="POST"
