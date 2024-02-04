@@ -2,6 +2,8 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { useState } from "react";
+
 import // SectionHeading,
 // Subheading as SubheadingBase,
 "components/misc/Headings.js";
@@ -56,7 +58,11 @@ export default ({
   formMethod = "POST",
   textOnLeft = true,
 }) => {
-  // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -76,6 +82,8 @@ export default ({
 
     e.preventDefault();
   };
+
+  const handleChange = (e) => ({ [e.target.name]: e.target.value });
 
   return (
     <AnimationRevealPage>
@@ -107,11 +115,38 @@ export default ({
                 <Input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                   placeholder="Your Email Address"
                 />
-                <Input type="text" name="name" placeholder="Full Name" />
-                <Input type="text" name="subject" placeholder="Subject" />
-                <Textarea name="message" placeholder="Your Message Here" />
+                <Input
+                  type="text"
+                  name="name"
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                  placeholder="Full Name"
+                />
+                <Input
+                  type="text"
+                  name="subject"
+                  value={subject}
+                  onChange={(e) => {
+                    setSubject(e.target.value);
+                  }}
+                  placeholder="Subject"
+                />
+                <Textarea
+                  name="message"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                  placeholder="Your Message Here"
+                />
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
               </form>
             </TextContent>
