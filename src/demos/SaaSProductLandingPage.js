@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
-import Testimonials from "components/testimonials/SimplePrimaryBackground.js";
+// import Testimonials from "components/testimonials/SimplePrimaryBackground.js";
 import ServiceAreaTwo from "./ServiceAreaTwo.js";
 import CounterAreaFour from "./CounterAreaFour.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
