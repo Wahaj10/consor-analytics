@@ -7,6 +7,8 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 import AboutPage from "demos/AboutPage.js";
 import ServicesPage from "demos/ServicesPage.js";
 import ThankYouPage from "ThankYouPage.js";
+import PopularAndRecentBlogPosts from "components/blogs/PopularAndRecentBlogPosts.js";
+import BlogPostPage from "components/blogs/BlogPostPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/blog" element={<PopularAndRecentBlogPosts />} />
+          <Route path="/blog/:id" element={<BlogPostPage />} />
         </Routes>
       </Router>
     </>
